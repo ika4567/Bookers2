@@ -9,7 +9,7 @@ Rails.application.routes.draw do
 
 
   resources :books
-  resources :users
+  resources :users, only: [:show, :index, :edit]
 
 
 
