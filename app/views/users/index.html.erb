@@ -15,7 +15,7 @@
   <tbody>
     <% @users.each do |users| %>
       <tr>
-
+        <tb><%= image_tag users.get_profile_image("50x50") %></tb>
         <tb><%= users.name %></tb>
         <tb><%= link_to "Show", user_path([:id]) %></tb>
       </tr>

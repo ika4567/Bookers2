@@ -1,5 +1,24 @@
 <!--部分テンプレート-->
 
+<h1>User info</h1>
+
+<p>name</p>
+<%= image_tag @user.get_profile_image("50x50") %>
+<%= @user.name %>
+<p>introduction</p>
+<%= @user.introduction %>
+<div>edit</div>
+
+
+<h1>New book</h1>
+<%= form_with model: Book.new, local:true do |f| %>
+  <%= f.label :Title %><br>
+  <%= f.text_field :title %>
+  <p>Opinion</p>
+  <%= f.text_area :body %>
+  <%= f.submit "Create Book" %>
+<% end %>
+
 <!--Books#index-->
 
 <h1>Books</h1>
