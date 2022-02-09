@@ -8,8 +8,8 @@ Rails.application.routes.draw do
 
 
 
-  resources :books
-  resources :users, only: [:show, :index, :edit]
+  resources :books, only: [:new, :index, :show, :edit]
+  resources :users, only: [:index, :show, :edit]
 
 
 
