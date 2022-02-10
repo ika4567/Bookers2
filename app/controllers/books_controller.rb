@@ -16,9 +16,8 @@ class BooksController < ApplicationController
 
   def index
     # 部分テンプレート部分
+    @book = Book.new
     @user = User.find(current_user.id)
-    # @book = @user.books
-
     # Books#idnexのインスタンス変数
     @books = Book.all
   end

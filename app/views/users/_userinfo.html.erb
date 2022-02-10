@@ -1,0 +1,15 @@
+<!--@user = User.find(current_user.id)-->
+
+<h2>User info</h2>
+<table class="table">
+  <tr><%= image_tag user.get_profile_image("50x50") %></tr>
+  <tr>
+    <th>name</th>
+    <td><%= user.name %></td>
+  </tr>
+  <tr>
+    <th>introduction</th>
+    <td><%= user.introduction %></td>
+  </tr>
+</table>
+<div>edit</div>
