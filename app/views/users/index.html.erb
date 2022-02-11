@@ -2,14 +2,14 @@
   <div class="row">
 
 <!--部分テンプレート-->
-    <div class="col-md-3" style="background-color: palegreen;">
+    <div class="col-md-3">
       <%= render 'userinfo', user: @user %>
       <%= render 'books/new', book: @book %>
     </div>
 
 
 <!--Books#index-->
-    <div class="col-md-9">
+    <div class="col-md-8 offset-md-1">
 
       <h2>Users</h2>
       <table class="table">
