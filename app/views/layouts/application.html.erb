@@ -12,6 +12,7 @@
   </head>
 
   <body>
+
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
@@ -78,7 +79,10 @@
 
     </header>
 
-
+    <p class="notice text-success"><%= notice %></p>
+    <p id="notice" class="text-success"><%= flash[:user_update] %></p>
+    <p id="notice" class="text-success"><%= flash[:book_create] %></p>
+    <p id="notice" class="text-success"><%= flash[:book_update] %></p>
 
     <%= yield %>
 
