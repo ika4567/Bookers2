@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   devise_for :users
 
-  get '/homes/about', as: 'about'
+  get '/home/about' => 'homes#about', as: 'about'
 
 
 
